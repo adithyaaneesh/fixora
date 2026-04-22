@@ -10,4 +10,4 @@ class Service(models.Model):
         return self.service_name
     
 class Booking(models.Model):
-    _status = models.CharField(max_length=20, default='true')
+    status = models.CharField(max_length=20, default=True)
