@@ -9,3 +9,5 @@ class Service(models.Model):
     def __str__(self):
         return self.service_name
     
+class Booking(models.Model):
+    _status = models.CharField(max_length=20, default='true')
